@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Catálogo</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>🌸 Mi Catálogo</h1>
+    <p>Productos sobre pedido</p>
+
+    <input type="text" id="buscador" placeholder="🔍 Buscar producto...">
+  </header>
+
+  <!-- CATEGORÍAS -->
+  <div class="categorias">
+    <button onclick="filtrar('todos')">Todos</button>
+    <button onclick="filtrar('ramos')">Ramos</button>
+    <button onclick="filtrar('sticker')">Stickers</button>
+    <button onclick="filtrar('ropa')">Ropa</button>
+  </div>
+
+  <!-- PRODUCTOS -->
+  <main id="productos">
+
+    <div class="card" data-categoria="ramos">
+      <h3>🌹 Ramo eterno</h3>
+      <p class="precio">$150</p>
+      <p class="pedido">📦 Sobre pedido</p>
+      <p>Ramo personalizado hecho a mano.</p>
+
+      <a class="whatsapp" href="https://wa.me/521XXXXXXXXXX?text=Hola%20quiero%20el%20ramo%20eterno" target="_blank">
+        💬 Pedir por WhatsApp
+      </a>
+    </div>
+
+    <div class="card" data-categoria="sticker">
+      <h3>🏷 Stickers personalizados</h3>
+      <p class="precio">$50</p>
+      <p class="pedido">📦 Sobre pedido</p>
+      <p>Paquete de stickers a tu gusto.</p>
+
+      <a class="whatsapp" href="https://wa.me/521XXXXXXXXXX?text=Hola%20quiero%20stickers" target="_blank">
+        💬 Pedir por WhatsApp
+      </a>
+    </div>
+
+  </main>
+
+  <!-- REDES -->
+  <footer>
+    <p>Sígueme en redes</p>
+    <a href="#">Instagram</a> |
+    <a href="#">Facebook</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
